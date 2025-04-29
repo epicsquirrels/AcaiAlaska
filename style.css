@@ -104,23 +104,22 @@ a:focus, button:focus, input:focus, textarea:focus, [tabindex]:focus {
 
 .header-logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
 }
 
 .header-logo img {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   border-radius: 12px;
-  display: block;
-  margin: 0 auto 0.3rem;
+  margin-right: 10px;
 }
 
 .header-logo h1 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   font-weight: 700;
   color: var(--text-white);
+  margin: 0;
 }
 
 .nav-top-row {
@@ -529,6 +528,21 @@ footer {
   .nav-top-row {
     justify-content: center;
     gap: var(--spacing-lg);
+  }
+  
+  .header-logo {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-logo img {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto 0.3rem;
+  }
+  
+  .header-logo h1 {
+    font-size: var(--font-size-xl);
   }
   
   .menu-toggle {
