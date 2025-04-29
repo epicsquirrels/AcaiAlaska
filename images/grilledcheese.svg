@@ -1,0 +1,36 @@
+<svg width="220" height="160" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="220" height="160" fill="#f9fafb" />
+  
+  <!-- Plate -->
+  <ellipse cx="110" cy="110" rx="90" ry="30" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2" />
+  
+  <!-- Sandwich -->
+  <g transform="translate(65, 55)">
+    <!-- Bottom bread slice -->
+    <rect x="0" y="30" width="90" height="15" rx="5" ry="5" fill="#fbbf24" stroke="#f59e0b" stroke-width="1" />
+    
+    <!-- Cheese dripping down -->
+    <path d="M10,30 L10,40 Q15,45 20,40 L20,30 Z" fill="#fbbf24" />
+    <path d="M50,30 L50,45 Q55,50 60,45 L60,30 Z" fill="#fbbf24" />
+    <path d="M75,30 L75,42 Q80,47 85,42 L85,30 Z" fill="#fbbf24" />
+    
+    <!-- Cheese layer -->
+    <rect x="5" y="20" width="80" height="10" rx="2" ry="2" fill="#fb923c" />
+    
+    <!-- Top bread slice -->
+    <rect x="0" y="5" width="90" height="15" rx="5" ry="5" fill="#f59e0b" stroke="#d97706" stroke-width="1" />
+    
+    <!-- Toasted marks -->
+    <line x1="10" y1="10" x2="25" y2="10" stroke="#92400e" stroke-width="1.5" />
+    <line x1="35" y1="10" x2="50" y2="10" stroke="#92400e" stroke-width="1.5" />
+    <line x1="60" y1="10" x2="75" y2="10" stroke="#92400e" stroke-width="1.5" />
+    
+    <line x1="10" y1="35" x2="25" y2="35" stroke="#92400e" stroke-width="1.5" />
+    <line x1="35" y1="35" x2="50" y2="35" stroke="#92400e" stroke-width="1.5" />
+    <line x1="60" y1="35" x2="75" y2="35" stroke="#92400e" stroke-width="1.5" />
+  </g>
+  
+  <!-- Text label -->
+  <text x="110" y="135" font-family="Inter, sans-serif" font-size="14" text-anchor="middle" fill="#334155" font-weight="bold">Grilled Cheese</text>
+</svg>
