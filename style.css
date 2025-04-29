@@ -146,7 +146,7 @@ a:focus, button:focus, input:focus, textarea:focus, [tabindex]:focus {
 .main-nav {
   display: none;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   padding: var(--spacing-sm) 0;
 }
 
@@ -163,6 +163,7 @@ a:focus, button:focus, input:focus, textarea:focus, [tabindex]:focus {
   margin: var(--spacing-sm) 0;
   position: relative;
   transition: var(--transition);
+  display: inline-block;
 }
 
 .main-nav a:hover, .main-nav a.active {
