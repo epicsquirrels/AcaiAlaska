@@ -199,61 +199,61 @@ const menuItems = {
   // Signature Bowls
   "Mauna Kea": {
     description: "Our premier acai bowl inspired by the tallest mountain in Hawaii.",
-    details: `<p>Our signature blend of organic acai, topped with all fresh fruit, macadamia nuts, walnuts, almonds, chocolate-covered almonds, granola with flax & pumpkin seeds, coconut shavings, goji berries, hemp, and flax seeds.</p>
+    details: `<p>Topped with all fresh fruit, macadamia nuts, walnuts, almonds, chocolate-covered almonds, granola with flax & pumpkin seeds, coconut shavings, goji berries, hemp, and flax seeds.</p>
               <p>A nutrient-dense powerhouse that delivers antioxidants, healthy fats, and sustained energy to fuel your day.</p>`,
     nutrition: "Rich in antioxidants, healthy omega-3 fatty acids, and protein."
   },
   "Ono": {
     description: "'Delicious' in Hawaiian - and that's exactly what this bowl is.",
-    details: `<p>Our premium organic acai blend topped with all fresh fruit, macadamia nuts, walnuts, almonds, chocolate-covered almonds, granola with raisins & almonds, and coconut shavings.</p>
+    details: `<p>Topped with all fresh fruit, macadamia nuts, walnuts, almonds, chocolate-covered almonds, granola with raisins & almonds, and coconut shavings.</p>
               <p>A beautiful balance of flavors and textures that delivers both nutrition and satisfaction.</p>`,
     nutrition: "Great source of fiber, healthy fats, and natural energy."
   },
   "Maui Waui": {
     description: "A tropical flavor sensation inspired by the Valley Isle.",
-    details: `<p>Our signature organic acai topped with bananas, blueberries, strawberries, macadamia nuts, walnuts, almonds, chocolate-covered almonds, granola with raisins & almonds, and coconut shavings.</p>
+    details: `<p>Topped with bananas, blueberries, strawberries, macadamia nuts, walnuts, almonds, chocolate-covered almonds, granola with raisins & almonds, and coconut shavings.</p>
               <p>A blend of island-inspired flavors that transport you to the beaches of Maui with every spoonful.</p>`,
     nutrition: "High in vitamin C, antioxidants, and heart-healthy nuts."
   },
   "Tiger Shark": {
     description: "Bold and beautiful - this bowl has serious bite!",
-    details: `<p>Our original acai blend topped with blackberries, kiwi, raspberries, walnuts, almonds, goji berries, pumpkin & sunflower seeds, bee pollen, chia, and flax & hemp seeds.</p>
+    details: `<p>Topped with blackberries, kiwi, raspberries, walnuts, almonds, goji berries, pumpkin & sunflower seeds, bee pollen, chia, and flax & hemp seeds.</p>
               <p>Named for its striking appearance and powerful nutritional profile. A favorite among our health-conscious customers.</p>`,
     nutrition: "Packed with omega-3s, plant protein, and over 20 vitamins and minerals."
   },
   "Mofo": {
     description: "A bold, adventurous blend for those who want it all.",
-    details: `<p>Our special acai blend topped with blackberries, kiwi, raspberries, walnuts, almonds, goji berries, pumpkin & sunflower seeds, bee pollen, chia, and flax & hemp seeds.</p>
+    details: `<p>Topped with blackberries, kiwi, raspberries, walnuts, almonds, goji berries, pumpkin & sunflower seeds, bee pollen, chia, and flax & hemp seeds.</p>
               <p>A true superfood explosion with a perfect balance of sweet and tart flavors.</p>`,
     nutrition: "Excellent source of antioxidants, healthy fats, and micronutrients."
   },
   "Lava Flow": {
     description: "Sweet and vibrant like the volcanic landscapes of Hawaii.",
-    details: `<p>Our signature acai blend topped with strawberries, chocolate-covered açaí & blueberry, coconut shavings, goji berries, and chia seeds.</p>
+    details: `<p>Topped with strawberries, chocolate-covered açaí & blueberry, coconut shavings, goji berries, and chia seeds.</p>
               <p>A beautiful contrast of rich flavors and bright berries - this bowl is as visually stunning as it is delicious.</p>`,
     nutrition: "High in antioxidants, fiber, and essential fatty acids."
   },
   "Purple Tide": {
     description: "A refreshing wave of antioxidant-rich goodness.",
-    details: `<p>Our original acai blend topped with kiwi, granola with flax & pumpkin seeds, goji berries, and bee pollen.</p>
+    details: `<p>Topped with kiwi, granola with flax & pumpkin seeds, goji berries, and bee pollen.</p>
               <p>A lighter option that still delivers maximum nutrition and flavor with every bite.</p>`,
     nutrition: "Good source of vitamin C, amino acids, and plant enzymes."
   },
   "Bonsai": {
     description: "Carefully crafted and perfectly balanced, like its namesake.",
-    details: `<p>Our acai base topped with kiwi, chocolate-covered açaí & blueberry, macadamia nuts, and spirulina.</p>
+    details: `<p>Topped with kiwi, chocolate-covered açaí & blueberry, macadamia nuts, and spirulina.</p>
               <p>A harmonious blend of sweet and earthy flavors with the added benefits of blue-green algae.</p>`,
     nutrition: "Contains complete protein, chlorophyll, and trace minerals."
   },
   "Reef": {
     description: "A tropical paradise in a bowl.",
-    details: `<p>Our signature acai blend topped with bananas, granola with raisins & almonds, coconut shavings, and spirulina.</p>
+    details: `<p>Topped with bananas, granola with raisins & almonds, coconut shavings, and spirulina.</p>
               <p>The addition of spirulina gives this bowl a unique nutritional boost and subtle complexity.</p>`,
     nutrition: "Rich in B vitamins, iron, and plant-based protein."
   },
   "Pipeline": {
     description: "A simple yet powerful wave of nutrition.",
-    details: `<p>Our acai base topped with bananas, granola with flax & pumpkin seeds, and hemp & flax seeds.</p>
+    details: `<p>Topped with bananas, granola with flax & pumpkin seeds, and hemp & flax seeds.</p>
               <p>Named after the famous Hawaiian surf break, this bowl delivers clean energy and nutrition without overwhelming the palate.</p>`,
     nutrition: "Excellent source of essential fatty acids and digestive fiber."
   },

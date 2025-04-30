@@ -364,6 +364,60 @@ section p {
   right: 0.25rem;
 }
 
+/* Acai Bases Section */
+.acai-bases {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 800px;
+  margin: 0 auto var(--spacing-lg);
+  padding: var(--spacing-md);
+  background-color: var(--bg-light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.base-item {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.base-item:last-child {
+  border-bottom: none;
+}
+
+.base-item h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-size-md);
+}
+
+.base-item p {
+  color: var(--text-light);
+  font-size: var(--font-size-md);
+}
+
+@media (min-width: 768px) {
+  .acai-bases {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .base-item {
+    flex: 1 0 28%;
+    min-width: 200px;
+    max-width: 250px;
+    border-bottom: none;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .base-item:last-child {
+    border-right: none;
+  }
+}
+
 .menu-card {
   flex: 0 0 auto;
   width: 180px;
