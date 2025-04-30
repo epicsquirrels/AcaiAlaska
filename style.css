@@ -333,7 +333,38 @@ section p {
   border-radius: 20px;
 }
 
-/* Scroll arrows removed */
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--bg-white);
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+  z-index: 2;
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: none; /* Hidden by default, shown only on desktop */
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-arrow:hover, .scroll-arrow:focus {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
+
+.scroll-arrow.left {
+  left: 0.25rem;
+}
+
+.scroll-arrow.right {
+  right: 0.25rem;
+}
 
 /* Acai Bases Section */
 .acai-bases {
