@@ -366,7 +366,7 @@ section p {
 
 .menu-card {
   flex: 0 0 auto;
-  width: 220px;
+  width: 180px;
   background: var(--bg-white);
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow);
@@ -376,6 +376,7 @@ section p {
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .menu-card:hover, .menu-card:focus-within {
@@ -385,7 +386,7 @@ section p {
 
 .menu-card img {
   width: 100%;
-  height: 160px;
+  height: 140px;
   object-fit: cover;
   border-bottom: 1px solid #eee;
 }
@@ -654,6 +655,93 @@ footer {
   a:focus, button:focus, input:focus, textarea:focus, [tabindex]:focus {
     outline: 3px solid black;
   }
+}
+
+/* ===== MODAL STYLES ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: var(--bg-white);
+  width: 90%;
+  max-width: 500px;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+  transform: translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  background: none;
+  border: none;
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+  color: var(--text-light);
+  transition: color 0.2s ease;
+}
+
+.modal-close:hover, .modal-close:focus {
+  color: var(--text-dark);
+}
+
+.modal-image {
+  width: 100%;
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--spacing-md);
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.modal-title {
+  font-size: var(--font-size-xl);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.modal-description {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.5;
+}
+
+.modal-details {
+  background-color: var(--bg-light);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.modal-details p {
+  margin-bottom: var(--spacing-sm);
 }
 
 /* Reduced motion for accessibility */
