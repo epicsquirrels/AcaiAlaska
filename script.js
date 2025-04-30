@@ -7,58 +7,7 @@
  * Scroll navigation for menu sections
  * @param {HTMLElement} button - The button that was clicked
  */
-function scrollSectionLeft(button) {
-  const wrapper = button.closest('.scroll-wrapper');
-  const scrollSection = wrapper.querySelector('.scroll-section');
-  
-  // Calculate a reasonable scroll distance based on the container width
-  const scrollAmount = Math.min(scrollSection.clientWidth * 0.8, 600);
-  
-  scrollSection.scrollBy({ 
-    left: -scrollAmount, 
-    behavior: 'smooth' 
-  });
-  
-  // Update arrow visibility after animation completes
-  setTimeout(() => updateScrollArrows(wrapper), 300);
-}
-
-/**
- * Scroll right in a menu section
- * @param {HTMLElement} button - The button that was clicked
- */
-function scrollSectionRight(button) {
-  const wrapper = button.closest('.scroll-wrapper');
-  const scrollSection = wrapper.querySelector('.scroll-section');
-  
-  // Calculate a reasonable scroll distance based on the container width
-  const scrollAmount = Math.min(scrollSection.clientWidth * 0.8, 600);
-  
-  scrollSection.scrollBy({ 
-    left: scrollAmount, 
-    behavior: 'smooth' 
-  });
-  
-  // Update arrow visibility after animation completes
-  setTimeout(() => updateScrollArrows(wrapper), 300);
-}
-
-/**
- * Update the visibility of scroll arrows based on scroll position
- * @param {HTMLElement} wrapper - The scroll wrapper element
- */
-function updateScrollArrows(wrapper) {
-  // Function kept for backward compatibility, but arrows are removed from HTML
-  return;
-}
-
-/**
- * Initialize all scroll wrappers
- */
-function initializeScrollWrappers() {
-  // Function retained for backward compatibility
-  // No scroll arrows are used anymore
-}
+// Scroll functionality removed
 
 /**
  * Toggle mobile menu with ARIA support
