@@ -48,55 +48,16 @@ function scrollSectionRight(button) {
  * @param {HTMLElement} wrapper - The scroll wrapper element
  */
 function updateScrollArrows(wrapper) {
-  const scrollSection = wrapper.querySelector('.scroll-section');
-  const leftArrow = wrapper.querySelector('.scroll-arrow.left');
-  const rightArrow = wrapper.querySelector('.scroll-arrow.right');
-  
-  if (!leftArrow || !rightArrow) return;
-
-  const scrollLeft = scrollSection.scrollLeft;
-  const scrollWidth = scrollSection.scrollWidth;
-  const clientWidth = scrollSection.clientWidth;
-  
-  // Add a small buffer (1px) to handle rounding errors
-  const atStart = scrollLeft <= 1;
-  const atEnd = scrollLeft + clientWidth >= scrollWidth - 1;
-  
-  leftArrow.style.display = atStart ? 'none' : 'flex';
-  rightArrow.style.display = atEnd ? 'none' : 'flex';
+  // Function kept for backward compatibility, but arrows are removed from HTML
+  return;
 }
 
 /**
  * Initialize all scroll wrappers
  */
 function initializeScrollWrappers() {
-  const wrappers = document.querySelectorAll('.scroll-wrapper.with-arrows');
-  
-  wrappers.forEach(wrapper => {
-    const scrollSection = wrapper.querySelector('.scroll-section');
-    
-    if (scrollSection) {
-      // Add scroll event listener with passive option for better performance
-      scrollSection.addEventListener('scroll', () => {
-        // Debounce the scroll event for better performance
-        if (scrollSection.scrollTimeout) {
-          clearTimeout(scrollSection.scrollTimeout);
-        }
-        
-        scrollSection.scrollTimeout = setTimeout(() => {
-          updateScrollArrows(wrapper);
-        }, 100);
-      }, { passive: true });
-      
-      // Initial check for arrows
-      updateScrollArrows(wrapper);
-    }
-  });
-  
-  // Update arrows when window resizes
-  window.addEventListener('resize', debounce(() => {
-    wrappers.forEach(updateScrollArrows);
-  }, 250));
+  // Function retained for backward compatibility
+  // No scroll arrows are used anymore
 }
 
 /**

@@ -302,9 +302,9 @@ section p {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 0 0.5rem;
+  padding: 0;
   margin-bottom: var(--spacing-lg);
-  overflow-x: auto;
+  width: 100%;
 }
 
 .scroll-section {
