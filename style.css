@@ -302,8 +302,9 @@ section p {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 0 2.5rem;
+  padding: 0 0.5rem;
   margin-bottom: var(--spacing-lg);
+  overflow-x: auto;
 }
 
 .scroll-section {
@@ -316,6 +317,7 @@ section p {
   scrollbar-color: var(--primary-color) transparent;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
+  width: 100%;
 }
 
 .scroll-section::-webkit-scrollbar {
@@ -639,15 +641,9 @@ footer {
     padding: var(--spacing-sm) var(--spacing-md);
   }
 
-  /* Only show scroll arrows on non-mobile devices */
+  /* Keep scroll arrows hidden on all screens */
   .scroll-arrow {
-    display: none; /* Still hidden for smaller tablets */
-  }
-  
-  @media (min-width: 992px) {
-    .scroll-arrow {
-      display: flex;
-    }
+    display: none;
   }
   
   /* Order now button */
