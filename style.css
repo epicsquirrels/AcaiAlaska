@@ -344,7 +344,7 @@ section p {
   z-index: 2;
   color: var(--primary-color);
   border-radius: 50%;
-  display: none;
+  display: none; /* Hidden by default, shown only on desktop */
   justify-content: center;
   align-items: center;
   transition: var(--transition);
@@ -639,9 +639,15 @@ footer {
     padding: var(--spacing-sm) var(--spacing-md);
   }
 
-  /* Show scroll arrows */
+  /* Only show scroll arrows on non-mobile devices */
   .scroll-arrow {
-    display: flex;
+    display: none; /* Still hidden for smaller tablets */
+  }
+  
+  @media (min-width: 992px) {
+    .scroll-arrow {
+      display: flex;
+    }
   }
   
   /* Order now button */
