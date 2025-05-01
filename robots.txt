@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://acaiofalaska.com/sitemap.xml 
