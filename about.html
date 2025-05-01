@@ -29,7 +29,7 @@
       <a href="about.html" class="active">About</a>
       <a href="menu.html">Menu</a>
       <a href="contact.html">Contact</a>
-      <a href="#" onclick="openDeliveryModal(event)" class="order-now desktop-only" aria-label="Order Online">Order Online</a>
+      <a href="#" onclick="document.getElementById('deliveryModal').classList.add('active'); document.body.style.overflow = 'hidden'; return false;" class="order-now desktop-only" aria-label="Order Online">Order Online</a>
     </nav>
   </header>
 
@@ -123,7 +123,7 @@
   <!-- Delivery Options Modal -->
   <div class="modal-overlay" id="deliveryModal">
     <div class="modal-content">
-      <button class="modal-close" onclick="closeDeliveryModal()" aria-label="Close modal">×</button>
+      <button class="modal-close" onclick="document.getElementById('deliveryModal').classList.remove('active'); document.body.style.overflow = '';" aria-label="Close modal">×</button>
       <h2 class="modal-title">Order Online</h2>
       <p>Choose your preferred delivery service:</p>
       <div class="delivery-options">
