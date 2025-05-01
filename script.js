@@ -3,8 +3,6 @@
  * Optimized for performance and accessibility
  */
 
-
-
 /**
  * Update the visibility of scroll arrows based on scroll position
  * @param {HTMLElement} wrapper - The scroll wrapper element
@@ -314,21 +312,6 @@ function initializeMenuCards() {
       }
     });
   });
-  
-  // Handle clicks outside modal to close it
-  window.addEventListener('click', function(e) {
-    const modal = document.getElementById('menuModal');
-    if (modal && e.target === modal) {
-      closeModal();
-    }
-  });
-  
-  // Add escape key to close modal
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-      closeModal();
-    }
-  });
 }
 
 /**
@@ -380,8 +363,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
-  // Handle clicks outside delivery modal to close it
+  // Handle clicks outside modals to close them
   window.addEventListener('click', function(e) {
+    const menuModal = document.getElementById('menuModal');
+    if (menuModal && e.target === menuModal) {
+      closeModal();
+    }
+    
     const deliveryModal = document.getElementById('deliveryModal');
     if (deliveryModal && e.target === deliveryModal) {
       closeDeliveryModal();
