@@ -1,5 +1,5 @@
 /**
- * Acai Alaska - Main JavaScript
+ * Acai of Alaska - Main JavaScript
  * Optimized for performance and accessibility
  */
 
