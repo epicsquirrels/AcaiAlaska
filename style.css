@@ -284,8 +284,8 @@ a:focus, button:focus, input:focus, textarea:focus, [tabindex]:focus {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  background: var(--gradient-bg);
-  color: var(--text-white);
+  background: #F5F5F5;
+  color: var(--text-dark);
   padding: var(--spacing-lg) var(--spacing-md);
   text-align: center;
 }
