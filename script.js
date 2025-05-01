@@ -332,12 +332,61 @@ function initializeMenuCards() {
 }
 
 /**
- * Initialize all functionality when the DOM is loaded
+ * Open the delivery options modal
+ * @param {Event} event - The click event
  */
+function openDeliveryModal(event) {
+  if (event) event.preventDefault();
+  
+  const modal = document.getElementById('deliveryModal');
+  if (!modal) return;
+  
+  // Show modal
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden'; // Prevent background scrolling
+  
+  // Set focus to the close button for accessibility
+  setTimeout(() => {
+    const closeButton = modal.querySelector('.modal-close');
+    if (closeButton) closeButton.focus();
+  }, 100);
+}
+
+/**
+ * Close the delivery options modal
+ */
+function closeDeliveryModal() {
+  const modal = document.getElementById('deliveryModal');
+  if (!modal) return;
+  
+  modal.classList.remove('active');
+  document.body.style.overflow = ''; // Restore scrolling
+  
+  // Return focus to the element that opened the modal for accessibility
+  const orderButton = document.querySelector('.order-now');
+  if (orderButton) orderButton.focus();
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   initializeAccordions();
   setupImageLazyLoading();
   initializeMenuCards();
+  
+  // Close modals with Escape key
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      closeModal();
+      closeDeliveryModal();
+    }
+  });
+  
+  // Handle clicks outside delivery modal to close it
+  window.addEventListener('click', function(e) {
+    const deliveryModal = document.getElementById('deliveryModal');
+    if (deliveryModal && e.target === deliveryModal) {
+      closeDeliveryModal();
+    }
+  });
   
   // Ensure menu is closed on window resize (to prevent hidden menu on desktop)
   window.addEventListener('resize', debounce(() => {
