@@ -973,6 +973,79 @@ footer {
   line-height: 1.6;
 }
 
+/* New Acai Info Grid Layout */
+.acai-info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem 0;
+  background-color: var(--bg-light);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+}
+
+.acai-info-column {
+  flex: 1;
+}
+
+.acai-info-column h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.acai-info-column p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.acai-image-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.acai-bowl-illustration {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.benefit-icon {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 30px;
+}
+
+@media (min-width: 768px) {
+  .acai-info-grid {
+    flex-direction: row;
+  }
+  
+  .acai-info-column {
+    padding: 0 1rem;
+  }
+  
+  .acai-image-column {
+    order: 2;
+  }
+}
+
 /* Reduced motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
