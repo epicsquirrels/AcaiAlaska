@@ -1,5 +1,5 @@
 [build]
-  publish = "AcaiAlaska"  # The directory that contains your website files
+  publish = "."  # The directory that contains your website files
   command = ""  # No build command needed for static site
 
 # Basic redirects for common cases
