@@ -28,7 +28,7 @@
       <a href="about.html" class="active">About</a>
       <a href="menu.html">Menu</a>
       <a href="contact.html">Contact</a>
-      <a href="#" onclick="document.getElementById('deliveryModal').classList.add('active'); document.body.style.overflow = 'hidden'; return false;" class="order-now desktop-only" aria-label="Order Online">Order Online</a>
+      <a href="https://order.online/store/acai-of-alaska-anchorage-33268581/?hideModal=true&pickup=true&redirected=true" class="order-now desktop-only" aria-label="Order Online">Order Now</a>
     </nav>
   </header>
 
@@ -64,26 +64,6 @@
       <p>&copy; 2025 Acai of Alaska. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- Delivery Options Modal -->
-  <div class="modal-overlay" id="deliveryModal">
-    <div class="modal-content">
-      <button class="modal-close" onclick="document.getElementById('deliveryModal').classList.remove('active'); document.body.style.overflow = '';" aria-label="Close modal">×</button>
-      <h2 class="modal-title">Order Online</h2>
-      <p>Choose your preferred delivery service:</p>
-      <div class="delivery-options">
-        <a href="https://order.online/store/acai-of-alaska-anchorage-33268581/?hideModal=true&pickup=true&redirected=true" target="_blank" rel="noopener" class="delivery-option">
-          <img src="images/doordash-logo.svg" alt="DoorDash" width="150">
-          <span>Order with DoorDash</span>
-        </a>
-        <a href="https://www.ubereats.com/store/acai-of-alaska/ylDM0M6RXEKib6EydtiNGg?ps=1" target="_blank" rel="noopener" class="delivery-option">
-          <img src="images/ubereats-logo.svg" alt="Uber Eats" width="150">
-          <span>Order with Uber Eats</span>
-        </a>
-      </div>
-    </div>
-  </div>
-  
   <script src="script.js"></script>
 </body>
 </html>
